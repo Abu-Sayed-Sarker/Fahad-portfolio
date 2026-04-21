@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Senior AI Research Engineer",
+    "company": "TechVision AI Solutions",
+    "duration": "Jan 2023 - Present",
+    "location": "Dhaka, Bangladesh",
+    "description": "Leading the research and development of transformer-based models for medical imaging. Improved model accuracy by 15% using semi-supervised learning techniques.",
+    "responsibilities": [
+      "Mentored a team of 5 junior AI developers",
+      "Optimized inference pipelines reducing latency by 40%",
+      "Published 2 papers in international computer vision conferences"
+    ],
+    "companyLogo": "https://img.icons8.com/color/96/google-logo.png"
+  },
+  {
+    "id": 2,
+    "title": "Machine Learning Engineer",
+    "company": "InnoSoft Systems",
+    "duration": "June 2021 - Dec 2022",
+    "location": "Remote",
+    "description": "Developed and deployed recommendation systems for e-commerce platforms using Graph Neural Networks.",
+    "responsibilities": [
+      "Implemented A/B testing frameworks for model evaluation",
+      "Designed scalable data pipelines using Apache Spark",
+      "Collaborated with product teams to define key performance metrics"
+    ],
+    "companyLogo": "https://img.icons8.com/color/96/amazon.png"
+  },
+  {
+    "id": 3,
+    "title": "Junior Data Scientist",
+    "company": "DataNexus Corp",
+    "duration": "Jan 2020 - May 2021",
+    "location": "Dhaka, Bangladesh",
+    "description": "Analyzed large-scale datasets to extract actionable insights for business optimization.",
+    "responsibilities": [
+      "Automated weekly reporting using Python and PowerBI",
+      "Cleaned and pre-processed 10TB+ of raw customer data",
+      "Assisted in building fraud detection models using XGBoost"
+    ],
+    "companyLogo": "https://img.icons8.com/color/96/microsoft.png"
+  }
+]

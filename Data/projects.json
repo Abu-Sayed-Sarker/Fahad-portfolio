@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Tuberculosis-Detection-from-Ch...",
+    "description":
+      "This project have been done for our bachelor thesis in City University, Bangladesh which is going to be published after more improving with the models reliability in no time.",
+    "image":
+      "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=600&q=80",
+    "github": "https://github.com",
+    "liveUrl": "#"
+  },
+  {
+    "id": 2,
+    "title": "Audio-Bot-with-OpenAI",
+    "description":
+      "This project have been done for our bachelor thesis in City University, Bangladesh which is going to be published after more improving with the models reliability in no time.",
+    "image":
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&q=80",
+    "github": "https://github.com",
+    "liveUrl": "#"
+  },
+  {
+    "id": 3,
+    "title": "Face Mask Detection",
+    "description":
+      "This project have been done for our bachelor thesis in City University, Bangladesh which is going to be published after more improving with the models reliability in no time.",
+    "image":
+      "https://images.unsplash.com/photo-1584634731339-252c581abfc5?w=600&q=80",
+    "github": "https://github.com",
+    "liveUrl": "#"
+  },
+  {
+    "id": 4,
+    "title": "AI Image Generator",
+    "description":
+      "This project have been done for our bachelor thesis in City University, Bangladesh which is going to be published after more improving with the models reliability in no time.",
+    "image":
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&q=80",
+    "github": "https://github.com",
+    "liveUrl": "#"
+  },
+  {
+    "id": 5,
+    "title": "NLP Sentiment Analyzer",
+    "description":
+      "This project have been done for our bachelor thesis in City University, Bangladesh which is going to be published after more improving with the models reliability in no time.",
+    "image":
+      "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=600&q=80",
+    "github": "https://github.com",
+    "liveUrl": "#"
+  },
+  {
+    "id": 6,
+    "title": "Smart Resume Parser",
+    "description":
+      "This project have been done for our bachelor thesis in City University, Bangladesh which is going to be published after more improving with the models reliability in no time.",
+    "image":
+      "https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&q=80",
+    "github": "https://github.com",
+    "liveUrl": "#"
+  }
+]
