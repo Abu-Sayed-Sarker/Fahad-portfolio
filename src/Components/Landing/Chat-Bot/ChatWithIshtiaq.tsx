@@ -17,10 +17,15 @@ export default function ChatWithIshtiaq() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (scrollRef.current) {
+      scrollRef.current.scrollTo({
+        top: scrollRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
   }, [messages, loading]);
 
   const sendMessage = async (text: string) => {
@@ -78,17 +83,36 @@ export default function ChatWithIshtiaq() {
   const isEmpty = messages.length === 0;
 
   return (
-    <section id="chat" className="flex flex-col items-center justify-start px-4 py-10">
+    <section
+      id="chat"
+      className="flex flex-col items-center justify-start px-4 py-10"
+    >
+      <style>{`
+        .custom-scrollbar::-webkit-scrollbar {
+          width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+          background: #2e3460;
+          border-radius: 10px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+          background: #5b21b6;
+        }
+        .custom-scrollbar {
+          scrollbar-width: thin;
+          scrollbar-color: #2e3460 transparent;
+        }
+      `}</style>
       {/* Page Title */}
       <h1 className="text-white text-4xl font-bold mb-8 tracking-tight">
         Chat With Ishtiaq
       </h1>
 
       {/* Chat Container */}
-      <div
-        className="w-full max-w-4xl bg-[#10142e] border border-[#1e2451] rounded-2xl overflow-hidden flex flex-col"
-        style={{ minHeight: 600 }}
-      >
+      <div className="w-full max-w-4xl h-150 bg-[#10142e] border border-[#1e2451] rounded-2xl overflow-hidden flex flex-col">
         {/* Header */}
         <div className="flex items-center gap-4 px-6 py-4 border-b border-[#1e2451]">
           <div className="w-12 h-12 rounded-full overflow-hidden bg-[#1e2451] shrink-0">
@@ -106,8 +130,8 @@ export default function ChatWithIshtiaq() {
 
         {/* Messages Area */}
         <div
-          className="flex-1 overflow-y-auto px-6 py-6 flex flex-col gap-4 relative"
-          style={{ minHeight: 380 }}
+          ref={scrollRef}
+          className="flex-1 overflow-y-auto custom-scrollbar px-6 py-6 flex flex-col gap-4 relative"
         >
           {/* Purple glow background */}
           <div
@@ -153,7 +177,6 @@ export default function ChatWithIshtiaq() {
                   </div>
                 </div>
               )}
-              <div ref={bottomRef} />
             </div>
           )}
         </div>
