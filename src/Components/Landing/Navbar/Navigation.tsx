@@ -28,9 +28,9 @@ export default function Navigation() {
             <a href="#projects" className="text-foreground/80 hover:text-white transition-all hover:drop-shadow-[0_0_10px_rgba(124,58,237,0.5)]">
               Projects
             </a>
-            <a href="#testimonials" className="text-foreground/80 hover:text-white transition-all hover:drop-shadow-[0_0_10px_rgba(124,58,237,0.5)]">
+            {/* <a href="#testimonials" className="text-foreground/80 hover:text-white transition-all hover:drop-shadow-[0_0_10px_rgba(124,58,237,0.5)]">
               Testimonials
-            </a>
+            </a> */}
           </div>
 
           <div className="hidden md:flex items-center gap-4">
