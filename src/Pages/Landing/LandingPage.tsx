@@ -1,7 +1,7 @@
 import Navigation from "../../Components/Landing/Navbar/Navigation";
 import HeroSection from "../../Components/Landing/Hero/HeroSection";
 import ContactPage from "../../Components/Landing/Contact-us/ContactPage";
-import Testimonials from "../../Components/Landing/Testimonials/Testmonials";
+// import Testimonials from "../../Components/Landing/Testimonials/Testmonials";
 import Footer from "../../Components/Landing/Footer/Footer";
 import ChatWithIshtiaq from "../../Components/Landing/Chat-Bot/ChatWithIshtiaq";
 import FeaturedProjects from "../../Components/Landing/My-Projects/FeaturedProjects";
