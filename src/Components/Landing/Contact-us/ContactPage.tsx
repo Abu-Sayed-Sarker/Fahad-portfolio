@@ -33,12 +33,17 @@ export default function ContactPage() {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
   } = useForm<ContactFormInputs>();
+
+  const [submitSuccess, setSubmitSuccess] = React.useState(false);
+  const [submitError, setSubmitError] = React.useState<string | null>(null);
 
   const onSubmit: SubmitHandler<ContactFormInputs> = async (
     data: ContactFormInputs,
   ) => {
+    setSubmitSuccess(false);
+    setSubmitError(null);
     const form = new FormData();
 
     form.append("name", data.name);
@@ -51,21 +56,25 @@ export default function ContactPage() {
         "https://formsubmit.co/ajax/istiaqahmmedfahad@gmail.com",
         {
           method: "POST",
+          headers: {
+            "Accept": "application/json"
+          },
           body: form,
         }
       );
 
       const result = await response.json();
 
-      if (result.success === "true") {
+      if (result.success === "true" || result.success === true) {
         console.log("Message sent!");
+        setSubmitSuccess(true);
         reset();
       } else {
-        throw new Error("Form submission failed");
+        throw new Error(result.message || "Form submission failed");
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error submitting form:", error);
-      throw error;
+      setSubmitError(error.message || "Something went wrong. Please try again.");
     }
   };
 
@@ -186,9 +195,15 @@ export default function ContactPage() {
             )}
           </button>
 
-          {isSubmitSuccessful && (
-            <p className="text-center text-[#3fb950] text-sm">
+          {submitSuccess && (
+            <p className="text-center text-[#3fb950] text-sm bg-[#3fb950]/10 border border-[#3fb950]/30 rounded-lg py-3">
               ✓ Message sent successfully!
+            </p>
+          )}
+
+          {submitError && (
+            <p className="text-center text-[#f85149] text-sm bg-[#f85149]/10 border border-[#f85149]/30 rounded-lg py-3">
+              ✗ {submitError}
             </p>
           )}
         </form>

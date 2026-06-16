@@ -25,7 +25,7 @@ export default function Footer() {
         >
           <img
             src={logo}
-            alt="Logo"
+            alt="Istiaq Ahmmed Fahad Logo"
             loading="lazy"
             className="h-18 drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]"
           />
@@ -87,7 +87,7 @@ export default function Footer() {
             />
           </div>
           <span className="group-hover:text-white transition-colors">
-            +8801256985223
+            +8801632701883
           </span>
         </div>
       </div>
