@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Head of Technical Officer",
+    "company": "Join Venture AI (JVAI), Betopia Group",
+    "duration": "July 2025 - Present",
+    "location": "Dhaka, Bangladesh",
+    "description": "Leading technical strategy, AI product development, and engineering operations. Overseeing architecture decisions, team leadership, and delivery of AI-powered solutions.",
+    "responsibilities": [
+      "Led and monitored cross-functional development teams, resolving technical bottlenecks and ensuring on-time, high-quality delivery",
+      "Provided hands-on AI leadership, supporting teams with architecture decisions, model integration, and problem-solving",
+      "Aligned engineering execution with company goals by managing target-based performance and delivery standards",
+      "Ensured product excellence by overseeing QA processes and enforcing strict quality and reliability benchmarks"
+    ],
+    "companyLogo": "https://joinventureai.com/fevicon.png"
+  },
+  {
+    "id": 2,
+    "title": "AI Developer",
+    "company": "Join Venture AI (JVAI), Betopia Group",
+    "duration": "Dec 2024 - July 2025",
+    "location": "Dhaka, Bangladesh",
+    "description": "Developing and implementing AI solutions, including RAG systems, Large Language Models (LLMs), and computer vision applications. Involved throughout the AI development lifecycle from research to deployment.",
+    "responsibilities": [
+      "Conducted requirement gathering meetings with clients across different countries and time zones before initiating projects.",
+      "Developed real-time rip current detection system using YOLOv11 for coastal video analysis.",
+      "Built AI story generation features powered by OpenAI models.",
+      "Implemented multilingual voice translation and real-time speech processing with Deepgram.",
+      "Created conversational AI calling agents using Vapi for automated voice interactions.",
+      "Designed and deployed RAG-based chatbots with vector search + LLMs for accurate, context-aware responses.",
+      "Worked on image generation and video generation tasks in computer vision projects"
+    ],
+    "companyLogo": "https://joinventureai.com/fevicon.png"
+  },
+  {
+    "id": 3,
+    "title": "Trainee AI Developer",
+    "company": "Join Venture AI (JVAI), Betopia Group",
+    "duration": "Sept 2024 - Nov 2024",
+    "location": "Dhaka, Bangladesh",
+    "description": "Worked on AI development projects with a focus on machine learning, LLM integration, and research-driven prototyping. Assisted in implementing production-ready AI solutions.",
+    "responsibilities": [
+      "Focused on building and implementing AI solutions using RAG systems, LLMs, and computer vision modelsWorked on RAG-based chatbots and applications (using vector databases like Pinecone and FAISS)",
+      "Helped develop features powered by large language models (LLMS)",
+      "Contributed to computer vision tasks including object detection, image generation, and video generation.",
+      "Figured out new technologies."
+    ],
+    "companyLogo": "https://joinventureai.com/fevicon.png"
+  }
+]
